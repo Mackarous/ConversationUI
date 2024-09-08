@@ -15,7 +15,9 @@ The repo contains the following simple items:
 
 | Text Demo | Image Demo |
 |----------|----------|
-| ![Text Demo](Demo/text_demo.mov) | ![Image Demo](Demo/image_demo.mov) |
+| ![Text Demo](https://github.com/user-attachments/assets/b6cdaf05-c0db-4131-a806-3aa22bf669b1) | ![Image Demo](https://github.com/user-attachments/assets/0a93ad7a-51e3-485d-9ea6-a003c7f82434) |
+
+
 
 ## License
 
