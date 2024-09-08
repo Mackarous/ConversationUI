@@ -1,11 +1,13 @@
 import SwiftUI
 
-struct MessageBubble: View {
+public struct MessageBubble: View {
     let message: Message
     
-    @Environment(\.colorScheme) private var colorScheme
+    public init(message: Message) {
+        self.message = message
+    }
     
-    var body: some View {
+    public var body: some View {
         HStack {
             if message.direction == .outgoing {
                 Spacer(minLength: .messageInsetPadding)

@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct ConversationView: View {
+public struct ConversationView: View {
     @Binding var messages: [Message]
     
     @Namespace private var animation
@@ -8,8 +8,12 @@ struct ConversationView: View {
     
     @State private var text = ""
     @State private var sentMessage: Message?
+    
+    public init(messages: Binding<[Message]>) {
+        _messages = messages
+    }
 
-    var body: some View {
+    public var body: some View {
         ScrollViewReader { proxy in
             ScrollView {
                 VStack(alignment: .leading, spacing: 0) {

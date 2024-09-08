@@ -1,14 +1,26 @@
 import Foundation
 import SwiftUI
 
-struct Message: Identifiable, Equatable {
-    var id = UUID()
-    var date = Date()
-    let direction: Direction
-    let kind: Kind
+public struct Message: Identifiable, Equatable {
+    public var id = UUID()
+    public var date = Date()
+    public let direction: Direction
+    public let kind: Kind
+    
+    public init(
+        id: UUID = UUID(),
+        date: Date = Date(),
+        direction: Direction,
+        kind: Kind
+    ) {
+        self.id = id
+        self.date = date
+        self.direction = direction
+        self.kind = kind
+    }
 }
 
-extension Message {
+public extension Message {
     enum Kind: Equatable {
         case text(String)
         case image(UIImage)
