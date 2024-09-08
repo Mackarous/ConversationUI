@@ -77,10 +77,7 @@ struct ConversationView: View {
     private func submit() {
         guard !text.isEmpty else { return }
         
-        var message = Message(direction: .outgoing, kind: .text(text))
-        if text == "kitten test" {
-            message = Message(direction: .incoming, kind: .image(UIImage(resource: .kitten)))
-        }
+        let message = Message(direction: .outgoing, kind: .text(text))
         text = ""
 
         sentMessage = message
